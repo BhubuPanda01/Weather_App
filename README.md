@@ -22,8 +22,10 @@ TechStack
 <li>CSS: For styling the application, including the dark mode feature.</li>
 <li>Axios: A promise-based HTTP client for making API requests.</li>
 
+<br>
 
 Contributions are welcome! Please feel free to submit a Pull Request or open an issue.
 
+<br>
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
