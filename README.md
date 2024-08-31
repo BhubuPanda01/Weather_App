@@ -3,7 +3,7 @@
 Page live on : https://bhubupanda01.github.io/Weather_App/
 
 
-<u>Overview</u>
+Overview
 The Weather App is a simple, responsive web application built using React.js and Vite. It allows users to search for real-time weather data by city name. The app fetches data from the OpenWeatherMap API and displays current weather conditions, including temperature, humidity, wind speed, and more. The app also features a dark mode toggle, allowing users to switch between light and dark themes for a more comfortable viewing experience.
 
 <br>
