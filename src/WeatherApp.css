@@ -1,0 +1,103 @@
+/* WeatherApp.css */
+:root {
+  --background-light: url('./assets/day.png');
+  /* --background-light: #f3f4f6; */
+  --background-dark: url('./assets/Night.png'); /* Black background for dark mode */
+  --gradient-light: linear-gradient(45deg, rgb(18, 180, 244), rgba(208, 159, 252, 0.8));
+  --gradient-dark: linear-gradient(45deg, rgba(11, 11, 11, 0.8), rgba(88, 86, 86, 0.8));
+  --text-light: #080808;
+  --text-dark: #f3f4f6;
+  --button-bg-light: #007BFF;
+  --button-bg-dark: #444444;
+  --button-text-light: #fff;
+  --button-text-dark: #ddd;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--background-light);
+  background-size: cover;
+  transition: background 0.3s ease;
+}
+
+body.dark-mode {
+  background: var(--background-dark);
+  background-size: cover;
+}
+
+.weather-app {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--gradient-light);
+  color: var(--text-light);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode .weather-app {
+  background: var(--gradient-dark);
+  color: var(--text-dark);
+}
+
+.city-input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+
+body.dark-mode .city-input {
+  background-color: #333;
+  color: #ddd;
+  border-color: #666;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: var(--button-bg-light);
+  color: var(--button-text-light);
+  border: solid black 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+body.dark-mode .search-button {
+  background-color: var(--button-bg-dark);
+  color: var(--button-text-dark);
+}
+
+.search-button:hover {
+  opacity: 0.8;
+}
+
+.weather-data {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.weather-data h2 {
+  margin-bottom: 10px;
+}
+
+.weather-data p {
+  margin: 5px 0;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
